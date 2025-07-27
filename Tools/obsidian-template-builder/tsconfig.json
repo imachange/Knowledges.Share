@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2021",                      /* コンパイル後のJavaScriptのバージョン */
+    "module": "commonjs",                    /* コンパイル後のモジュール形式 (Node.js環境ならcommonjs) */
+    "lib": ["es2021"],                       /* 利用可能なグローバルAPIの定義 */
+    "esModuleInterop": true,                 /* CommonJSとES Modulesの互換性を高める */
+    "forceConsistentCasingInFileNames": true,/* ファイル名の大文字小文字を区別 */
+    "strict": true,                          /* 厳格な型チェックを有効にする (推奨) */
+    "skipLibCheck": true,                    /* 依存ライブラリの型チェックをスキップ */
+    "baseUrl": ".",                          /* モジュール解決の基準パス */
+    "outDir": "../../Config/Archetypes",     /* コンパイル済みJSファイルの出力先 (直接MDファイルに変換するため、実際には使用しないが便宜上) */
+    "typeRoots": [                           /* 型定義ファイルの検索パス */
+      "./node_modules/@types",
+      "./types"
+    ],
+    "types": [                               /* 明示的に含める型定義パッケージ */
+      "node"                                 // ここに "node" を追加
+    ]
+  },
+  "include": [
+    "src/**/*.ts",                           /* テンプレートのTypeScriptファイル */
+    "build.ts",                              /* ビルドスクリプト自体もTypeScriptで書く場合 */
+    "types/**/*.d.ts"                        /* カスタム型定義ファイル */
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

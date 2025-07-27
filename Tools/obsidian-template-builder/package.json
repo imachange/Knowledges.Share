@@ -1,0 +1,23 @@
+{
+  "name": "@imachange/obsidian-template-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "private": true,
+  "scripts": {
+    "build": "ts-node build.ts",
+    "compile": "tsc --noEmit",
+    "watch": "tsc --watch --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "obsidian-api": "^2.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.8.3"
+  }
+}
