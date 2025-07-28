@@ -1,0 +1,3 @@
+# Share/pnpm-workspace.yaml
+packages:
+  - 'tools/*' # tools/obsidian-template-builder を含む

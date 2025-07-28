@@ -14,7 +14,8 @@
       "./types"
     ],
     "types": [                               /* 明示的に含める型定義パッケージ */
-      "node"                                 // ここに "node" を追加
+      "node",
+      "obsidian"
     ]
   },
   "include": [
