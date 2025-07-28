@@ -5,7 +5,7 @@
   "main": "build.js",
   "private": true,
   "scripts": {
-    "build": "ts-node build.ts",
+    "build": "vite build",
     "compile": "tsc --noEmit",
     "watch": "tsc --watch --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
     "obsidian": "^1.8.7",
     "obsidian-api": "^2.3.0",
     "ts-node": "^10.9.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^7.0.6"
   }
 }
